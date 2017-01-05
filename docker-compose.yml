@@ -7,7 +7,7 @@ web:
         links:
                 - db
 db:
-        image: mysql
+        image: registry.cn-hangzhou.aliyuncs.com/qinyujia-test/mysql
         hostname: mysql-db
         environment:
                 MYSQL_ALLOW_EMPTY_PASSWORD: 1
