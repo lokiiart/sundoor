@@ -1,0 +1,14 @@
+web:
+        build: ./web
+        volumes:
+                - ./web:/home/app/webapp
+        ports:
+                - "80:80"
+        links:
+                - db
+db:
+        image: mysql
+        ports:
+                - "3306"
+        volumes:
+                - ./db:/var/lib/mysql

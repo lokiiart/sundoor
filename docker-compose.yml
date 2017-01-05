@@ -1,0 +1,17 @@
+web:
+        build: ./web
+        volumes:
+                - ./web:/home/app/webapp
+        ports:
+                - "80:80"
+        links:
+                - db
+db:
+        image: mysql
+        hostname: mysql-db
+        environment:
+                MYSQL_ALLOW_EMPTY_PASSWORD: 1
+        ports:
+                - "3306"
+        volumes:
+                - ./db:/var/lib/mysql
