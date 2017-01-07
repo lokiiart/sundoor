@@ -14,7 +14,7 @@ class WelcomeController < ApplicationController
       p 'record a page visitor failed'
     end
 
-    p 'test git'
+    p 'test gi'
 
     @ip = request.remote_ip
     render template
