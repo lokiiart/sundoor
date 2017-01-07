@@ -1,6 +1,7 @@
 class WelcomeController < ApplicationController
   def index
     template = ab_test(:welcome_page, 'index', 'index2')
+    template = "baidu/examine"
     p request.remote_ip
     @page_visitor = PageVisitor.new
     @page_visitor.RemoteIP = request.remote_ip
@@ -14,7 +15,6 @@ class WelcomeController < ApplicationController
     end
 
     @ip = request.remote_ip
-    template = "baidu/examine"
     render template
   end
 
