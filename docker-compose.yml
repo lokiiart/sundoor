@@ -6,6 +6,7 @@ web:
                 - "80:80"
         links:
                 - db
+                - cache
 db:
         image: registry.cn-hangzhou.aliyuncs.com/qinyujia-test/mysql
         hostname: mysql-db
@@ -15,3 +16,8 @@ db:
                 - "3306"
         volumes:
                 - ./db:/var/lib/mysql
+cache:
+        image: registry.cn-hangzhou.aliyuncs.com/qinyujia-test/redis
+        hostname: redis-db
+        ports:
+                - "6379"

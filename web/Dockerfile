@@ -15,7 +15,7 @@ FROM registry.cn-hangzhou.aliyuncs.com/wecan/passenger-ruby23
 
 # Set correct environment variables.
 ENV HOME /root
-
+ENV REDIS_URL  redis://redis-db:6379
 # Use baseimage-docker's init process.
 CMD ["/sbin/my_init"]
 

@@ -16,14 +16,17 @@ Rails.application.configure do
   if Rails.root.join('tmp/caching-dev.txt').exist?
     config.action_controller.perform_caching = true
 
-    config.cache_store = :memory_store
+    # config.cache_store = :memory_store
+    config.cache_store = :redis_store, "redis://redis-db:6379/0/cache", { expires_in: 1000 }
     config.public_file_server.headers = {
       'Cache-Control' => 'public, max-age=172800'
     }
   else
     config.action_controller.perform_caching = false
 
-    config.cache_store = :null_store
+    # config.cache_store = :null_store
+    config.cache_store = :redis_store, "redis://redis-db:6379/0/cache", { expires_in: 1000 }
+
   end
 
   # Don't care if the mailer can't send.
