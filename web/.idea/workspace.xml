@@ -535,7 +535,7 @@
       <workItem from="1483653391975" duration="6441000" />
       <workItem from="1483660279008" duration="9984000" />
       <workItem from="1483761216088" duration="74000" />
-      <workItem from="1483761316225" duration="1443000" />
+      <workItem from="1483761316225" duration="1555000" />
     </task>
     <task id="LOCAL-00001" summary="make production database">
       <created>1483646700867</created>
@@ -569,7 +569,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="22630000" />
+=======
+    <option name="totallyTimeSpent" value="22731000" />
+>>>>>>> test_git
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="1023" extended-state="6" />
