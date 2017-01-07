@@ -2,10 +2,11 @@ class WelcomeController < ApplicationController
   def index
     template = ab_test(:welcome_page, 'index', 'index2')
     p request.env['REMOTE_ADDR']
+    p request.remote_ip
     p request.env['HTTP_REFERER']
     p request.env['HTTP_X_FORWARDED_FOR']
 
-    @ip=request.headers['X-Real-IP']
+    @ip = request.env['REMOTE_ADDR']
     render template
   end
 
