@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bb548062-9bec-47e5-8319-743a3def66d0" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/welcome_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/welcome_controller.rb" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
@@ -536,7 +535,7 @@
       <workItem from="1483653391975" duration="6441000" />
       <workItem from="1483660279008" duration="9984000" />
       <workItem from="1483761216088" duration="74000" />
-      <workItem from="1483761316225" duration="1514000" />
+      <workItem from="1483761316225" duration="1555000" />
     </task>
     <task id="LOCAL-00001" summary="make production database">
       <created>1483646700867</created>
@@ -570,7 +569,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22690000" />
+    <option name="totallyTimeSpent" value="22731000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="1023" extended-state="6" />
